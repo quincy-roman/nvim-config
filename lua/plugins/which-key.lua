@@ -5,6 +5,7 @@ return {
       ["<leader>ce"] = { name = "+extract" },
       ["<leader>r"] = { name = "+code-runner" },
       ["<leader>cL"] = { name = "+live-server" },
+      ["<leader>t"] = { name = "+terminal" },
     },
   },
 }

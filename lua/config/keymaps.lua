@@ -6,5 +6,7 @@ local keymap = vim.keymap.set
 keymap({ "i", "v" }, "jk", "<Esc>", { desc = "Easier <Esc>", silent = true })
 keymap({ "i", "v" }, "JK", "<Esc>", { desc = "Easier <Esc>", silent = true })
 keymap({ "i", "v" }, "JK", "<Esc>", { desc = "Easier <Esc>", silent = true })
+keymap({ "t" }, "jk", "<c-\\><c-n>", { desc = "Easier <Esc>", silent = true })
+keymap({ "t" }, "JK", "<c-\\><c-n>", { desc = "Easier <Esc>", silent = true })
 keymap({ "n", "i", "v" }, "<A-h>", "<cmd>tabprevious<cr>", { desc = "Previous tab", silent = true })
 keymap({ "n", "i", "v" }, "<A-l>", "<cmd>tabnext<cr>", { desc = "Next tab", silent = true })
