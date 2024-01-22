@@ -6,6 +6,7 @@ return {
       "heex",
       "eex",
       "go",
+      "rust"
     },
   },
 }
