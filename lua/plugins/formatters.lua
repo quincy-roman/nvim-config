@@ -5,6 +5,7 @@ return {
       vim.list_extend(opts.ensure_installed, {
         -- Add any other formatters desired, and do same below
         "black",
+        "prettier",
       })
     end,
   },
@@ -16,6 +17,14 @@ return {
         -- This is below
         formatters_by_ft = {
           python = { "black" },
+          html = { "prettier" },
+          javascript = { "prettier" },
+          typescript = { "prettier" },
+          json = { "prettier" },
+          markdown = { "prettier" },
+          yaml = { "prettier" },
+          css = { "prettier" },
+          go = { "gofumpt" },
         },
       }
       return opts
