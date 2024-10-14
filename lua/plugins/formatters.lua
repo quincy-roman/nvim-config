@@ -1,3 +1,5 @@
+-- NOTE: Mason is just a package manager, formatters will also need to be setup
+-- with conform.nvim
 return {
   {
     "williamboman/mason.nvim",
@@ -6,6 +8,7 @@ return {
         -- Add any other formatters desired, and do same below
         "black",
         "prettier",
+        "clang-format"
       })
     end,
   },
@@ -13,7 +16,7 @@ return {
     "stevearc/conform.nvim",
     opts = function()
       local opts = {
-        ---@type table<string, conform.FormatterUnit[]>
+        ---@type table<string, string[]>
         -- This is below
         formatters_by_ft = {
           python = { "black" },
@@ -25,6 +28,8 @@ return {
           yaml = { "prettier" },
           css = { "prettier" },
           go = { "gofumpt" },
+          java = { "clang-format" },
+          c = { "clang-format" },
         },
       }
       return opts
