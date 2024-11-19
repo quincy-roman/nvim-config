@@ -8,7 +8,7 @@ return {
         -- Add any other formatters desired, and do same below
         "black",
         "prettier",
-        "clang-format"
+        "clang-format",
       })
     end,
   },
@@ -30,6 +30,9 @@ return {
           go = { "gofumpt" },
           java = { "clang-format" },
           c = { "clang-format" },
+          proto = { "clang-format" },
+          bash = { "shfmt" },
+          lua = { "stylua" },
         },
       }
       return opts

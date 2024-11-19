@@ -5,11 +5,11 @@
 local o = vim.o
 
 o.list = true
-o.rnu = false
+o.rnu = true
 
 -- Setting the 80 column bar
-o.cc = '80'
+o.cc = "80"
 
 -- Set the clipboard back to the default. Avoids having to do the copy dance
 -- by keeping the nvim y separate from the clipboard by default
-o.clipboard = ''
+o.clipboard = ""
