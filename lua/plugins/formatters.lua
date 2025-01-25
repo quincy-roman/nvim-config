@@ -33,6 +33,7 @@ return {
           proto = { "clang-format" },
           bash = { "shfmt" },
           lua = { "stylua" },
+          xml = { "xmlformatter" },
         },
       }
       return opts
