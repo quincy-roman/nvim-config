@@ -9,6 +9,7 @@ return {
         "black",
         "prettier",
         "clang-format",
+        "xmlformatter",
       })
     end,
   },
@@ -34,6 +35,7 @@ return {
           bash = { "shfmt" },
           lua = { "stylua" },
           xml = { "xmlformatter" },
+          rust = { "rustfmt" },
         },
       }
       return opts
