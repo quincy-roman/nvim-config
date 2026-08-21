@@ -13,3 +13,8 @@ o.cc = "80"
 -- Set the clipboard back to the default. Avoids having to do the copy dance
 -- by keeping the nvim y separate from the clipboard by default
 o.clipboard = ""
+
+vim.g.lazyvim_python_lsp = "pyright"
+
+-- Set the default colorscheme to tokyonight
+vim.g.lazyvim_colorscheme = "tokyonight-storm"
